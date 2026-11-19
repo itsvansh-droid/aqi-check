@@ -1,0 +1,328 @@
+/* ---------- Wide / laptop ---------- */
+
+@media (max-width: 1240px) {
+  .global-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .world-map {
+    height: 430px;
+  }
+
+  .city-list {
+    max-height: 440px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---------- Compact desktop: sidebar collapses ---------- */
+
+@media (max-width: 1080px) {
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-brand {
+    display: flex;
+  }
+
+  .mobile-places {
+    display: flex;
+  }
+
+  .topbar {
+    padding-top: 15px;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .now-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 22px;
+  }
+
+  .hero-gauge {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .hero-body {
+    padding: 0;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pollutant-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .world-map {
+    height: 360px;
+  }
+
+  .global-head {
+    align-items: flex-start;
+  }
+
+  .global-head-actions {
+    padding-bottom: 0;
+  }
+}
+
+/* ---------- Small tablet / large phone ---------- */
+
+@media (max-width: 720px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 0 10px;
+  }
+
+  .mobile-brand {
+    order: 1;
+  }
+
+  .topbar-actions {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .search {
+    order: 3;
+    flex: 1 0 100%;
+    max-width: none;
+  }
+
+  .search-field input,
+  .mini-search input {
+    font-size: 16px;
+  }
+
+  .search-field {
+    height: 44px;
+  }
+
+  .search-hint {
+    display: none;
+  }
+
+  .main-note {
+    display: none;
+  }
+
+  .stat-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 13px 15px;
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .chart-tooltip {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .insight-banner {
+    align-items: flex-start;
+    padding: 12px 14px;
+  }
+}
+
+/* ---------- Phone ---------- */
+
+@media (max-width: 620px) {
+  .shell {
+    padding: 0 14px 28px;
+  }
+
+  .now,
+  .global {
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .hero-title {
+    margin: 4px 0 8px;
+    font-size: 33px;
+  }
+
+  .hero-advice {
+    margin-top: 10px;
+    font-size: 12.5px;
+  }
+
+  .hero-meta {
+    gap: 7px 9px;
+    font-size: 10.5px;
+  }
+
+  .hero-stat {
+    padding: 8px 9px;
+  }
+
+  .hero-stat-icon {
+    display: none;
+  }
+
+  .panel {
+    padding: 17px 16px;
+    border-radius: 17px;
+  }
+
+  .panel-head {
+    gap: 9px;
+  }
+
+  .panel-head h2 {
+    font-size: 14px;
+  }
+
+  .gauge {
+    max-width: 244px;
+  }
+
+  .gauge-center {
+    top: 49px;
+  }
+
+  .gauge-value {
+    font-size: 52px;
+  }
+
+  .pollutant {
+    padding: 11px 12px;
+  }
+
+  .pollutant-value {
+    font-size: 23px;
+  }
+
+  .pollutant-foot {
+    flex-wrap: wrap;
+    gap: 2px 6px;
+  }
+
+  .forecast-day {
+    padding: 11px 12px 10px;
+  }
+
+  .forecast-value {
+    font-size: 25px;
+  }
+
+  .view-tabs button {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .map-legend {
+    right: 11px;
+    left: 11px;
+    max-width: none;
+  }
+
+  .map-hint {
+    display: none;
+  }
+
+  .world-map {
+    height: 320px;
+  }
+
+  .city-row {
+    grid-template-columns: 20px 18px minmax(0, 1fr) 40px 32px;
+    gap: 6px;
+    padding: 7px 5px;
+  }
+
+  .city-bar {
+    display: none;
+  }
+
+  .city-rank {
+    font-size: 8.5px;
+  }
+
+  .toolbar-row {
+    flex-wrap: wrap;
+  }
+
+  .select-wrap {
+    flex: 1 1 100%;
+  }
+
+  .select-wrap select {
+    width: 100%;
+  }
+
+  .toast {
+    bottom: 16px;
+    font-size: 11.5px;
+  }
+
+  .error-card {
+    padding: 30px 22px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-stats {
+    gap: 6px;
+  }
+
+  .pollutant-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .pollutant-name {
+    display: none;
+  }
+
+  .forecast-value {
+    font-size: 23px;
+  }
+}
